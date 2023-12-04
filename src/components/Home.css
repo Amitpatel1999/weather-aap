@@ -1,0 +1,232 @@
+.weather {
+    background-color: black;
+    height: 100vh;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px !important;
+    color: rgb(249, 247, 247);
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    text-align: center;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.search button img {
+    width: 16px;
+}
+
+.weathers {
+    color: white;
+}
+.weathers-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weathers h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weathers h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humaidity, .wind{
+    margin-top: -6px;
+    font-size: 28px
+}
+.humi{
+    margin-top: -10px;
+    font-size: 15px;
+}
+.speed{
+    margin-top: -10px;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .search {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .search input {
+        margin-right: 0;
+    }
+    .search button img {
+        width: 20px;
+    }
+    .weathers h1 { font-size: 60px;
+    }
+
+    .weathers h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+    .search {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 25px;
+        height: 40px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 0px;
+        font-size: 18px;
+    }
+    .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .search button img {
+        width: 20px;
+    }
+    .weathers h1 {
+        font-size: 20px;
+        
+    }
+
+    .weathers h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px) {
+
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+    .search {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 25px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 10px;
+    }
+    .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .search button img {
+        width: 20px;
+    }
+    .weathers h1 {
+        font-size: 20px;
+        
+    }
+
+    .weathers h2 {
+        font-size: 20px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .col img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .humaidity, .wind{
+        margin-top: -6px;
+        font-size: 20px
+    }
+    .humi{
+        margin-top: -10px;
+        font-size: 12px;
+        margin-left: 4px;
+    }
+    .speed{
+        margin-top: -10px;
+        margin-left: 4px;
+        font-size: 9px;
+    }
+}
